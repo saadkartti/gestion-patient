@@ -1,0 +1,132 @@
+/* Fichier: assets/css/healthcare.css */
+/* --- Polices et Styles de base --- */
+.healthcare-dashboard, .healthcare-form {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* --- Sidebar Personnalisée --- */
+.main-sidebar {
+    background: linear-gradient(180deg, #1abc9c 0%, #16a085 100%) !important;
+}
+.brand-link {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+.nav-sidebar .nav-item > .nav-link {
+    border-radius: .25rem;
+    margin: 2px 8px;
+    transition: all 0.3s ease;
+}
+.nav-sidebar .nav-item > .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateX(3px);
+}
+.nav-sidebar .nav-item > .nav-link.active {
+    background-color: #ffffff;
+    color: #1abc9c !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* --- Cartes de statistiques (avec effets de survol) --- */
+.stats-card {
+    transition: all 0.3s ease;
+}
+.stats-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15) !important;
+}
+.stats-card .icon {
+    transition: all 0.3s ease;
+    opacity: 0.2;
+}
+.stats-card:hover .icon {
+    opacity: 0.3;
+    transform: scale(1.1);
+}
+
+/* --- Tableau des Patients --- */
+.patients-table thead th {
+    background: linear-gradient(180deg, #1abc9c 0%, #16a085 100%);
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+.patients-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+/* --- Section des Médecins --- */
+.doctors-section .card-header {
+    background: #34495e;
+    color: #fff;
+}
+.doctor-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.doctor-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+.doctor-photo {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #3498db;
+}
+.doctor-name {
+    font-weight: 600;
+    color: #2c3e50;
+}
+.doctor-specialty {
+    color: #7f8c8d;
+    font-size: 0.85rem;
+}
+.doctor-department {
+    background: #3498db;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* --- Section des Actions Rapides --- */
+.quick-action-card {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    border: 1px solid #e3e6f0;
+}
+.quick-action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15) !important;
+    text-decoration: none;
+    color: inherit;
+}
+.quick-action-card.new-patient { background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); }
+.quick-action-card.emergency { background: linear-gradient(135deg, #fff3e0 0%, #ffcc02 100%); }
+.quick-action-card.pharmacy { background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%); }
+.quick-action-icon { font-size: 3rem; margin-bottom: 15px; }
+.quick-action-card.new-patient .quick-action-icon, .quick-action-card.new-patient .quick-action-name { color: #1976d2; }
+.quick-action-card.emergency .quick-action-icon, .quick-action-card.emergency .quick-action-name { color: #f57c00; }
+.quick-action-card.pharmacy .quick-action-icon, .quick-action-card.pharmacy .quick-action-name { color: #388e3c; }
+.quick-action-title { font-size: 0.9rem; font-weight: 500; color: #6c757d; }
+.quick-action-name { font-size: 1.3rem; font-weight: 600; }
+
+/* --- Badge de Département --- */
+.department-badge {
+    background: #e8f5f2;
+    color: #1abc9c;
+    font-weight: 600;
+}
+
+/* --- Boutons Personnalisés --- */
+.btn-healthcare-primary {
+    background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-healthcare-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(26, 188, 156, 0.4);
+}
