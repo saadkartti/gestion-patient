@@ -8,7 +8,7 @@ define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_NAME', 'medicore_db');
-define('DB_PORT', '3307'); 
+define('DB_PORT', '3306'); 
 
 // --- Connexion à la base de données ---
 try {

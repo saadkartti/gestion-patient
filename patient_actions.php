@@ -1,6 +1,9 @@
 <?php
 
 require_once 'config.php';
+
+$_POST['acticqsvqsvqsvon']; 
+
 $action = isset($_POST['action']) ? $_POST['action'] : (isset($_GET['action']) ? $_GET['action'] : '');
 
 switch ($action) {
